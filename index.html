@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,67 @@
     <header class="header">
         <h1>Форма реєстрації</h1>
     </header>
-    
+    <main>
+        <form action="#" method="GET" class="form">
+            <div class="row">
+                <label for="name" class="form_label">Повне ім`я</label>
+                <input type="text" id="name" class="form_input">
+            </div>
+            <div class="row">
+                <label for="email" class="form_label">Email</label>
+                <input type="email" id="email" class="form_input">
+            </div>
+            <div class="row">
+                <label for="password" class="form_label">Пароль</label>
+                <input type="password" id="password" class="form_input">
+            </div>
+            <div class="row">
+                <label for="confirm_password" class="form_label">Підтвердження паролю</label>
+                <input type="password" id="confirm_password" class="form_input">
+            </div>
+            <div class="gender">
+                <p class="form_label">Стать</p>
+                <label class="form_label">
+                    Жіноча
+                    <input class="input_gender" type="radio" name="gender" value="Жіноча">
+                </label>
+                <label class="form_label">
+                    Чоловіча
+                    <input type="radio" name="gender" value="Чоловіча">
+                </label>
+            </div>
+
+            <div class="age">
+                <label for="age" class="form_label">Вік</label>
+                <input class="input_age" type="number" id="age" name="age" min="16" max="90">
+            </div>
+            <div class="row">
+                <label for="course" class="form_label">Курс</label>
+                <select name="course" id="course" class="form_select">
+                    <option value="" selected disabled>Виберіть курс</option>
+                    <option value="fe">Front-End</option>
+                    <option value="be">Back-End</option>
+                    <option value="pm">Project Management</option>
+                    <option value="qam">QA Manual</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="adress" class="form_label">Повна адреса проживання</label>
+                <textarea name="adress" id="adress" placeholder="Країна, регіон, місто/селище, вулиця" rows="4"
+                    class="form_adress"></textarea>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" class="form_label">Я погоджуюсь з обробкою персональних даних</label>
+            </div>
+            <div class="buttons">
+                <input type="reset" value="Очистити форму" class="button">
+                <input type="submit" value="Зареєструватися" class="button">
+            </div>
+        </form>
+    </main>
+
+
 </body>
 
 </html>
